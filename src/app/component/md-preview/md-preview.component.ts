@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./md-preview.component.scss'],
 })
 export class MdPreviewComponent implements OnInit {
+  @Input() userDetails: any;
   constructor() {}
 
   ngOnInit() {}

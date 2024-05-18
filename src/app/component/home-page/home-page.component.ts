@@ -7,6 +7,11 @@ import { GithubService } from 'src/app/service/github.service';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
+  formData: any = {
+    email: '',
+    username: '',
+  };
+
   constructor(private githubService: GithubService) {}
 
   ngOnInit() {}
@@ -15,5 +20,10 @@ export class HomePageComponent implements OnInit {
     // this.githubService.getUserData(this.githubUsername).subscribe((data) => {
     //   this.githubUserData = data;
     // });
+  }
+
+  submitForm() {
+    // Emit the form data to the parent component
+    // this.formSubmit.emit(this.formData);
   }
 }

@@ -1,0 +1,12 @@
+.main-container {
+  @apply max-w-screen-xl mx-auto;
+  .navbar {
+    @apply h-20;
+  }
+  .homepage {
+    @apply h-screen;
+  }
+  footer {
+    @apply h-20;
+  }
+}
